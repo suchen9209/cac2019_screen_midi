@@ -1,0 +1,20 @@
+@font-face{
+	font-family: 'Agency FB Bold';
+	src: url('./fonts/AGENCYB.TTF');
+}
+@font-face{
+	font-family: 'GemunuLibre-ExtraBold';
+	src: url('./fonts/GemunuLibre-ExtraBold.ttf');
+}
+@font-face{
+	font-family: 'GemunuLibre-SemiBold';
+	src: url('./fonts/GemunuLibre-SemiBold.ttf');
+}
+@font-face{
+	font-family: 'SourceHanSansCN-Bold';
+	src: url('./fonts/SourceHanSansCN-Bold.otf');
+}
+@font-face{
+	font-family: 'White Rabbit';
+	src: url('./fonts/WHITRABT.TTF');
+}

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>specSidePanel</title>
+    <link href="./styles/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles/font.css" rel="stylesheet">
+    <link href="./styles/global.css" rel="stylesheet">
+    <link href="./styles/videoshow.css" rel="stylesheet">
+</head>
+<body>
+    <div class="video-bomb-show video-show">
+        <video id='bomb-video' class='video-js' controls preload='auto' width='1920' height='1080' data-setup='{}'>
+            <source src='./video/2s.mp4' type='video/mp4'>
+        </video>
+    </div>
+    <div class="video-defused-show video-show">
+        <video id='defused-video' class='video-js' controls preload='auto' width='1920' height='1080' data-setup='{}'>
+            <source src='./video/defused2s.mp4' type='video/mp4'>
+        </video>
+    </div>
+    <div class="specSidePanel-Left-All-singleSide-Full specSidePanel-All-singleSide-Full">
+        <div id="specSidePanel-0" class="specSidePanel-Left-Single-Full specSidePanel-Single-Full">
+            <div class="specSidePanel-Left-Single specSidePanel-Single">
+                <div class="specSidePanel-Left-healthBar-BgShadow specSidePanel-healthBar-BgShadow">
+                    <div class="specSidePanel-Left-healthBar-redWarn specSidePanel-healthBar-redWarn progress-bar progress-bar-danger"  role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="">
+                        <div class="specSidePanel-Left-healthBar specSidePanel-healthBar specSidePanel-healthBar-CT" >
+                            <div id="specSidePanel-healthText-L1" class="specSidePanel-Left-healthText specSidePanel-healthText">100</div>
+                            <div id="specSidePanel-nameText-L1" class="specSidePanel-nameText specSidePanel-nameText-Left">wuXinnnnnnnn</div>
+                            <div id="specSidePanel-roundKillInfo-L1" class="specSidePanel-Left-roundKillInfo specSidePanel-roundKillInfo">
+                                <div class="specSidePanel-Left-roundKillText specSidePanel-roundKillText">
+                                    5
+                                </div>
+                                <div class="specSidePanel-Left-roundKillIcon specSidePanel-roundKillIcon">
+                                    <img src="iCons/svg_normal/roundKill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-infoBar specSidePanel-infoBar" >
+                    <div id="" class="specSidePanel-PlayerNum">1</div>
+                    <div class="specSidePanel-Armor"><img src="iCons/svg_normal/item_assaultsuit.svg" class="specSidePanel-Armor-icon" alt=""></div>
+                    <div class="specSidePanel-specialIteam specSidePanel-Left-specialIteam">
+                        <!-- <img src="iCons/svg_normal/weapon_c4.svg" class="specSidePanel-specialIteam-icon" alt=""> -->
+                    </div>
+                    <div class="specSidePanel-Stats specSidePanel-Stats-Left">
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-K specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Kill-Left">K</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-K">8</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-A specSidePanel-Stats-Title-Left">A</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-A">2</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-D specSidePanel-Stats-Title-Left">D</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-D">6</div>
+                    </div>
+                    <div class="specSidePanel-nades-Left specSidePanel-nades">
+
+                        <img src="iCons/svg_normal/weapon_molotov.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_smokegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_flashbang.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_hegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                    </div>
+                    <div class="specSidePanel-pistal-Left specSidePanel-pistal">
+                        <img src="iCons/svg_normal/weapon_deagle.svg" class="specSidePanel-pistal-icon" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="specSidePanel-mainWeapon-Left specSidePanel-mainWeapon">
+                <!-- <img src="iCons/svg_normal/weapon_ak47.svg" class="specSidePanel-mainGun-icon specSidePanel-mainGun-icon-Left" alt=""> -->
+            </div>
+                <div class="specSidePanel-extraPanelAnimateFade specSidePanel-extraPanel-overFlow specSidePanel-extraPanel-overFlow-Left">
+                        <div class="specSidePanel-extraPanel specSidePanel-extraPanel-Left">
+                            <div class="specSidePanel-extraPanel-Money specSidePanel-extraPanel-Money-Left">
+                                <div class="specSidePanel-extraPanel-Money-Title">$</div>
+                                <div class="specSidePanel-extraPanel-Money-contents">0</div>
+                            </div>
+                            <div class="specSidePanel-extraPanel-payMoney specSidePanel-extraPanel-payMoney-Left">
+                            <div class="specSidePanel-extraPanel-payMoney-Title">-$</div>
+                            <div class="specSidePanel-extraPanel-payMoney-contents">0</div>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <div id="specSidePanel-1" class="specSidePanel-Left-Single-Full specSidePanel-Single-Full">
+            <div class="specSidePanel-Left-Single specSidePanel-Single">
+                <div class="specSidePanel-Left-healthBar-BgShadow specSidePanel-healthBar-BgShadow">
+                    <div class="specSidePanel-Left-healthBar-redWarn specSidePanel-healthBar-redWarn progress-bar progress-bar-danger"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="">
+                        <div class="specSidePanel-Left-healthBar specSidePanel-healthBar specSidePanel-healthBar-T" >
+                            <div id="specSidePanel-healthText-L1" class="specSidePanel-Left-healthText specSidePanel-healthText">100</div>
+                            <div id="specSidePanel-nameText-L1" class="specSidePanel-nameText specSidePanel-nameText-Left">wuXinnnnnnnn</div>
+                            <div id="specSidePanel-roundKillInfo-L1" class="specSidePanel-Left-roundKillInfo specSidePanel-roundKillInfo">
+                                <div class="specSidePanel-Left-roundKillText specSidePanel-roundKillText">
+                                    5
+                                </div>
+                                <div class="specSidePanel-Left-roundKillIcon specSidePanel-roundKillIcon">
+                                    <img src="iCons/svg_normal/roundKill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-infoBar specSidePanel-infoBar" >
+                    <div id="" class="specSidePanel-PlayerNum">2</div>
+                    <div class="specSidePanel-Armor"><img src="iCons/svg_normal/item_assaultsuit.svg" class="specSidePanel-Armor-icon" alt=""></div>
+                    <div class="specSidePanel-specialIteam specSidePanel-Left-specialIteam">
+                        <!-- <img src="iCons/svg_normal/weapon_c4.svg" class="specSidePanel-specialIteam-icon" alt=""> -->
+                    </div>
+                    <div class="specSidePanel-Stats specSidePanel-Stats-Left">
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-K specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Kill-Left">K</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-K">8</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-A specSidePanel-Stats-Title-Left">A</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-A">2</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-D specSidePanel-Stats-Title-Left">D</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-D">6</div>
+                    </div>
+                    <div class="specSidePanel-nades-Left specSidePanel-nades">
+
+                        <img src="iCons/svg_normal/weapon_molotov.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_smokegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_flashbang.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_hegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                    </div>
+                    <div class="specSidePanel-pistal-Left specSidePanel-pistal">
+                        <img src="iCons/svg_normal/weapon_deagle.svg" class="specSidePanel-pistal-icon" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="specSidePanel-mainWeapon-Left specSidePanel-mainWeapon">
+                <!-- <img src="iCons/svg_normal/weapon_ak47.svg" class="specSidePanel-mainGun-icon specSidePanel-mainGun-icon-Left" alt=""> -->
+            </div>
+                <div class="specSidePanel-extraPanelAnimateFade specSidePanel-extraPanel-overFlow specSidePanel-extraPanel-overFlow-Left">
+                        <div class="specSidePanel-extraPanel specSidePanel-extraPanel-Left">
+                            <div class="specSidePanel-extraPanel-Money specSidePanel-extraPanel-Money-Left">
+                                <div class="specSidePanel-extraPanel-Money-Title">$</div>
+                                <div class="specSidePanel-extraPanel-Money-contents">0</div>
+                            </div>
+                            <div class="specSidePanel-extraPanel-payMoney specSidePanel-extraPanel-payMoney-Left">
+                            <div class="specSidePanel-extraPanel-payMoney-Title">-$</div>
+                            <div class="specSidePanel-extraPanel-payMoney-contents">0</div>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <div id="specSidePanel-2" class="specSidePanel-Left-Single-Full specSidePanel-Single-Full">
+            <div class="specSidePanel-Left-Single specSidePanel-Single">
+                <div class="specSidePanel-Left-healthBar-BgShadow specSidePanel-healthBar-BgShadow">
+                    <div class="specSidePanel-Left-healthBar-redWarn specSidePanel-healthBar-redWarn progress-bar progress-bar-danger"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="">
+                        <div class="specSidePanel-Left-healthBar specSidePanel-healthBar" >
+                            <div id="specSidePanel-healthText-L1" class="specSidePanel-Left-healthText specSidePanel-healthText">100</div>
+                            <div id="specSidePanel-nameText-L1" class="specSidePanel-nameText specSidePanel-nameText-Left">wuXinnnnnnnn</div>
+                            <div id="specSidePanel-roundKillInfo-L1" class="specSidePanel-Left-roundKillInfo specSidePanel-roundKillInfo">
+                                <div class="specSidePanel-Left-roundKillText specSidePanel-roundKillText">
+                                    5
+                                </div>
+                                <div class="specSidePanel-Left-roundKillIcon specSidePanel-roundKillIcon">
+                                    <img src="iCons/svg_normal/roundKill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-infoBar specSidePanel-infoBar" >
+                    <div id="" class="specSidePanel-PlayerNum">3</div>
+                    <div class="specSidePanel-Armor"><img src="iCons/svg_normal/item_assaultsuit.svg" class="specSidePanel-Armor-icon" alt=""></div>
+                    <div class="specSidePanel-specialIteam specSidePanel-Left-specialIteam">
+                        <!-- <img src="iCons/svg_normal/weapon_c4.svg" class="specSidePanel-specialIteam-icon" alt=""> -->
+                    </div>
+                    <div class="specSidePanel-Stats specSidePanel-Stats-Left">
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-K specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Kill-Left">K</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-K">8</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-A specSidePanel-Stats-Title-Left">A</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-A">2</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-D specSidePanel-Stats-Title-Left">D</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-D">6</div>
+                    </div>
+                    <div class="specSidePanel-nades-Left specSidePanel-nades">
+
+                        <img src="iCons/svg_normal/weapon_molotov.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_smokegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_flashbang.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_hegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                    </div>
+                    <div class="specSidePanel-pistal-Left specSidePanel-pistal">
+                        <img src="iCons/svg_normal/weapon_deagle.svg" class="specSidePanel-pistal-icon" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="specSidePanel-mainWeapon-Left specSidePanel-mainWeapon">
+                <!-- <img src="iCons/svg_normal/weapon_ak47.svg" class="specSidePanel-mainGun-icon specSidePanel-mainGun-icon-Left" alt=""> -->
+            </div>
+                <div class="specSidePanel-extraPanelAnimateFade specSidePanel-extraPanel-overFlow specSidePanel-extraPanel-overFlow-Left">
+                        <div class="specSidePanel-extraPanel specSidePanel-extraPanel-Left">
+                            <div class="specSidePanel-extraPanel-Money specSidePanel-extraPanel-Money-Left">
+                                <div class="specSidePanel-extraPanel-Money-Title">$</div>
+                                <div class="specSidePanel-extraPanel-Money-contents">0</div>
+                            </div>
+                            <div class="specSidePanel-extraPanel-payMoney specSidePanel-extraPanel-payMoney-Left">
+                            <div class="specSidePanel-extraPanel-payMoney-Title">-$</div>
+                            <div class="specSidePanel-extraPanel-payMoney-contents">0</div>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <div id="specSidePanel-3" class="specSidePanel-Left-Single-Full specSidePanel-Single-Full">
+            <div class="specSidePanel-Left-Single specSidePanel-Single">
+                <div class="specSidePanel-Left-healthBar-BgShadow specSidePanel-healthBar-BgShadow">
+                    <div class="specSidePanel-Left-healthBar-redWarn specSidePanel-healthBar-redWarn progress-bar progress-bar-danger"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="">
+                        <div class="specSidePanel-Left-healthBar specSidePanel-healthBar" >
+                            <div id="specSidePanel-healthText-L1" class="specSidePanel-Left-healthText specSidePanel-healthText">100</div>
+                            <div id="specSidePanel-nameText-L1" class="specSidePanel-nameText specSidePanel-nameText-Left">wuXinnnnnnnn</div>
+                            <div id="specSidePanel-roundKillInfo-L1" class="specSidePanel-Left-roundKillInfo specSidePanel-roundKillInfo">
+                                <div class="specSidePanel-Left-roundKillText specSidePanel-roundKillText">
+                                    5
+                                </div>
+                                <div class="specSidePanel-Left-roundKillIcon specSidePanel-roundKillIcon">
+                                    <img src="iCons/svg_normal/roundKill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-infoBar specSidePanel-infoBar" >
+                    <div id="" class="specSidePanel-PlayerNum">4</div>
+                    <div class="specSidePanel-Armor"><img src="iCons/svg_normal/item_assaultsuit.svg" class="specSidePanel-Armor-icon" alt=""></div>
+                    <div class="specSidePanel-specialIteam specSidePanel-Left-specialIteam">
+                        <!-- <img src="iCons/svg_normal/weapon_c4.svg" class="specSidePanel-specialIteam-icon" alt=""> -->
+                    </div>
+                    <div class="specSidePanel-Stats specSidePanel-Stats-Left">
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-K specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Kill-Left">K</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-K">8</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-A specSidePanel-Stats-Title-Left">A</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-A">2</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-D specSidePanel-Stats-Title-Left">D</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-D">6</div>
+                    </div>
+                    <div class="specSidePanel-nades-Left specSidePanel-nades">
+
+                        <img src="iCons/svg_normal/weapon_molotov.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_smokegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_flashbang.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_hegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                    </div>
+                    <div class="specSidePanel-pistal-Left specSidePanel-pistal">
+                        <img src="iCons/svg_normal/weapon_deagle.svg" class="specSidePanel-pistal-icon" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="specSidePanel-mainWeapon-Left specSidePanel-mainWeapon">
+                <!-- <img src="iCons/svg_normal/weapon_ak47.svg" class="specSidePanel-mainGun-icon specSidePanel-mainGun-icon-Left" alt=""> -->
+            </div>
+                <div class="specSidePanel-extraPanelAnimateFade specSidePanel-extraPanel-overFlow specSidePanel-extraPanel-overFlow-Left">
+                        <div class="specSidePanel-extraPanel specSidePanel-extraPanel-Left">
+                            <div class="specSidePanel-extraPanel-Money specSidePanel-extraPanel-Money-Left">
+                                <div class="specSidePanel-extraPanel-Money-Title">$</div>
+                                <div class="specSidePanel-extraPanel-Money-contents">0</div>
+                            </div>
+                            <div class="specSidePanel-extraPanel-payMoney specSidePanel-extraPanel-payMoney-Left">
+                            <div class="specSidePanel-extraPanel-payMoney-Title">-$</div>
+                            <div class="specSidePanel-extraPanel-payMoney-contents">0</div>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <div id="specSidePanel-4" class="specSidePanel-Left-Single-Full specSidePanel-Single-Full">
+            <div class="specSidePanel-Left-Single specSidePanel-Single">
+                <div class="specSidePanel-Left-healthBar-BgShadow specSidePanel-healthBar-BgShadow">
+                    <div class="specSidePanel-Left-healthBar-redWarn specSidePanel-healthBar-redWarn progress-bar progress-bar-danger"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="">
+                        <div class="specSidePanel-Left-healthBar specSidePanel-healthBar" >
+                            <div id="specSidePanel-healthText-L1" class="specSidePanel-Left-healthText specSidePanel-healthText">100<!-- <img src="./iCons/svg_normal/dead.svg" alt="" > --></div>
+                            <div id="specSidePanel-nameText-L1" class="specSidePanel-nameText specSidePanel-nameText-Left">wuXinnnnnnnn</div>
+                            <div id="specSidePanel-roundKillInfo-L1" class="specSidePanel-Left-roundKillInfo specSidePanel-roundKillInfo">
+                                <div class="specSidePanel-Left-roundKillText specSidePanel-roundKillText">
+                                    5
+                                </div>
+                                <div class="specSidePanel-Left-roundKillIcon specSidePanel-roundKillIcon">
+                                    <img src="iCons/svg_normal/roundKill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-infoBar specSidePanel-infoBar" >
+                    <div id="" class="specSidePanel-PlayerNum">5</div>
+                    <div class="specSidePanel-Armor"><img src="iCons/svg_normal/item_assaultsuit.svg" class="specSidePanel-Armor-icon" alt=""></div>
+                    <div class="specSidePanel-specialIteam specSidePanel-Left-specialIteam">
+                        <!-- <img src="iCons/svg_normal/weapon_c4.svg" class="specSidePanel-specialIteam-icon" alt=""> -->
+                    </div>
+                    <div class="specSidePanel-Stats specSidePanel-Stats-Left">
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-K specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Kill-Left">K</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-K">8</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-A specSidePanel-Stats-Title-Left">A</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-A">2</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-D specSidePanel-Stats-Title-Left">D</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Content-D">6</div>
+                    </div>
+                    <div class="specSidePanel-nades-Left specSidePanel-nades">
+
+                        <img src="iCons/svg_normal/weapon_molotov.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_smokegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_flashbang.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_hegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                    </div>
+                    <div class="specSidePanel-pistal-Left specSidePanel-pistal">
+                        <img src="iCons/svg_normal/weapon_deagle.svg" class="specSidePanel-pistal-icon" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="specSidePanel-mainWeapon-Left specSidePanel-mainWeapon">
+                <!-- <img src="iCons/svg_normal/weapon_ak47.svg" class="specSidePanel-mainGun-icon specSidePanel-mainGun-icon-Left" alt=""> -->
+            </div>
+                <div class="specSidePanel-extraPanelAnimateFade specSidePanel-extraPanel-overFlow specSidePanel-extraPanel-overFlow-Left">
+                        <div class="specSidePanel-extraPanel specSidePanel-extraPanel-Left">
+                            <div class="specSidePanel-extraPanel-Money specSidePanel-extraPanel-Money-Left">
+                                <div class="specSidePanel-extraPanel-Money-Title">$</div>
+                                <div class="specSidePanel-extraPanel-Money-contents">0</div>
+                            </div>
+                            <div class="specSidePanel-extraPanel-payMoney specSidePanel-extraPanel-payMoney-Left">
+                            <div class="specSidePanel-extraPanel-payMoney-Title">-$</div>
+                            <div class="specSidePanel-extraPanel-payMoney-contents">0</div>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <div class="specSidePanel-extraPanelAnimateFade specSidePanel-Bottom-ExtraPanel-overFlow">
+            <div class="specSidePanel-Left-Bottom-ExtraPanel specSidePanel-Bottom-ExtraPanel">
+                    <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel specSidePanel-Bottom-ExtraPanel-roundLossLevel">
+                        <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-Title specSidePanel-Bottom-ExtraPanel-roundLossLevel-Title">
+                            连败补偿阶段
+                        </div>
+                        <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-bar specSidePanel-Bottom-ExtraPanel-roundLossLevel-bar " id="specSidePanelLeftLossCountBar">
+                            <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Bottom-ExtraPanel-roundLossLevel-block rdlslvl-L"></div>
+                            <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Bottom-ExtraPanel-roundLossLevel-block rdlslvl-L"></div>
+                            <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Bottom-ExtraPanel-roundLossLevel-block rdlslvl-L"></div>
+                            <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Bottom-ExtraPanel-roundLossLevel-block rdlslvl-L"></div>
+                        </div>
+                    </div>
+                    <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossMoney specSidePanel-Bottom-ExtraPanel-roundLossMoney">
+                        <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossMoney-Title specSidePanel-Bottom-ExtraPanel-roundLossMoney-Title">
+                            战败补偿基础经济
+                        </div>
+                        <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossMoney-Content specSidePanel-Bottom-ExtraPanel-roundLossMoney-Content" id="rdlsEco-L">
+                            $3500
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="specSidePanel-Left-All-singleSide-Full specSidePanel-All-singleSide-Full specSidePanel-Right-All-singleSide-Full">
+        <div id="specSidePanel-5" class="specSidePanel-Left-Single-Full specSidePanel-Single-Full specSidePanel-Right-Single-Full">
+            <div class="specSidePanel-Left-Single specSidePanel-Single specSidePanel-Right-Single">
+                <div class="specSidePanel-Left-healthBar-BgShadow specSidePanel-healthBar-BgShadow specSidePanel-Right-healthBar-BgShadow">
+                    <div class="specSidePanel-Left-healthBar-redWarn specSidePanel-healthBar-redWarn specSidePanel-Right-healthBar-redWarn progress-bar progress-bar-danger"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="">
+                        <div class="specSidePanel-Left-healthBar specSidePanel-healthBar specSidePanel-Right-healthBar" >
+                            <div id="specSidePanel-healthText-R1" class="specSidePanel-Left-healthText specSidePanel-healthText specSidePanel-Right-healthText rightPanelScale">100</div>
+                            <div id="specSidePanel-nameText-R1" class="specSidePanel-nameText specSidePanel-nameText-Left specSidePanel-nameText-Right rightPanelScale">wuXinnnnnnnnnnnn</div>
+                            <div id="specSidePanel-roundKillInfo-R1" class="specSidePanel-Left-roundKillInfo specSidePanel-roundKillInfo specSidePanel-Right-roundKillInfo">
+                                <div class="specSidePanel-Left-roundKillText specSidePanel-roundKillText specSidePanel-Right-roundKillText rightPanelScale">
+                                    5
+                                </div>
+                                <div class="specSidePanel-Left-roundKillIcon specSidePanel-roundKillIcon specSidePanel-Right-roundKillIcon rightPanelScale">
+                                    <img src="iCons/svg_normal/roundKill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-infoBar specSidePanel-infoBar specSidePanel-Right-infoBar" >
+                    <div id="" class="specSidePanel-PlayerNum rightPanelScale">6</div>
+                    <div class="specSidePanel-Armor rightPanelScale"><img src="iCons/svg_normal/item_assaultsuit.svg" class="specSidePanel-Armor-icon" alt=""></div>
+                    <div class="specSidePanel-specialIteam specSidePanel-Left-specialIteam specSidePanel-Right-specialIteam rightPanelScale">
+                        <!-- <img src="iCons/svg_normal/weapon_c4.svg" class="specSidePanel-specialIteam-icon" alt=""> -->
+                    </div>
+                    <div class="specSidePanel-Stats specSidePanel-Stats-Left specSidePanel-Stats-Right rightPanelScale">
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-K specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Kill-Left specSidePanel-Stats-Title-Right specSidePanel-Stats-Title-Kill-Right">K</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-K">8</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-A specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Right">A</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-A">2</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-D specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Right">D</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-D">6</div>
+                    </div>
+                    <div class="specSidePanel-nades-Left specSidePanel-nades specSidePanel-nades-Right rightPanelScale">
+
+                        <img src="iCons/svg_normal/weapon_molotov.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_smokegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_flashbang.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_hegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                    </div>
+                    <div class="specSidePanel-pistal-Left specSidePanel-pistal specSidePanel-pistal-Right">
+                        <img src="iCons/svg_normal/weapon_deagle.svg" class="specSidePanel-pistal-icon" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="specSidePanel-mainWeapon-Left specSidePanel-mainWeapon specSidePanel-mainWeapon-Right">
+                <!-- <img src="iCons/svg_normal/weapon_ak47.svg" class="specSidePanel-mainGun-icon specSidePanel-mainGun-icon-Left specSidePanel-mainGun-icon-Right" alt=""> -->
+            </div>
+                <div class="specSidePanel-extraPanelAnimateFade specSidePanel-extraPanel-overFlow specSidePanel-extraPanel-overFlow-Left specSidePanel-extraPanel-overFlow-Right">
+                        <div class="specSidePanel-extraPanel specSidePanel-extraPanel-Left specSidePanel-extraPanel-Right">
+                            <div class="specSidePanel-extraPanel-Money specSidePanel-extraPanel-Money-Left specSidePanel-extraPanel-Money-Right rightPanelScale">
+                                <div class="specSidePanel-extraPanel-Money-Title">$</div>
+                                <div class="specSidePanel-extraPanel-Money-contents">0</div>
+                            </div>
+                            <div class="specSidePanel-extraPanel-payMoney specSidePanel-extraPanel-payMoney-Left specSidePanel-extraPanel-payMoney-Right rightPanelScale">
+                            <div class="specSidePanel-extraPanel-payMoney-Title">-$</div>
+                            <div class="specSidePanel-extraPanel-payMoney-contents">0</div>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <div id="specSidePanel-6" class="specSidePanel-Left-Single-Full specSidePanel-Single-Full specSidePanel-Right-Single-Full">
+            <div class="specSidePanel-Left-Single specSidePanel-Single specSidePanel-Right-Single">
+                <div class="specSidePanel-Left-healthBar-BgShadow specSidePanel-healthBar-BgShadow specSidePanel-Right-healthBar-BgShadow">
+                    <div class="specSidePanel-Left-healthBar-redWarn specSidePanel-healthBar-redWarn specSidePanel-Right-healthBar-redWarn progress-bar progress-bar-danger"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="">
+                        <div class="specSidePanel-Left-healthBar specSidePanel-healthBar specSidePanel-Right-healthBar" >
+                            <div id="specSidePanel-healthText-R1" class="specSidePanel-Left-healthText specSidePanel-healthText specSidePanel-Right-healthText rightPanelScale">100</div>
+                            <div id="specSidePanel-nameText-R1" class="specSidePanel-nameText specSidePanel-nameText-Left specSidePanel-nameText-Right rightPanelScale">wuXinnnnnnnnnnnn</div>
+                            <div id="specSidePanel-roundKillInfo-R1" class="specSidePanel-Left-roundKillInfo specSidePanel-roundKillInfo specSidePanel-Right-roundKillInfo">
+                                <div class="specSidePanel-Left-roundKillText specSidePanel-roundKillText specSidePanel-Right-roundKillText rightPanelScale">
+                                    5
+                                </div>
+                                <div class="specSidePanel-Left-roundKillIcon specSidePanel-roundKillIcon specSidePanel-Right-roundKillIcon rightPanelScale">
+                                    <img src="iCons/svg_normal/roundKill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-infoBar specSidePanel-infoBar specSidePanel-Right-infoBar" >
+                    <div id="" class="specSidePanel-PlayerNum rightPanelScale">7</div>
+                    <div class="specSidePanel-Armor rightPanelScale"><img src="iCons/svg_normal/item_assaultsuit.svg" class="specSidePanel-Armor-icon" alt=""></div>
+                    <div class="specSidePanel-specialIteam specSidePanel-Left-specialIteam specSidePanel-Right-specialIteam rightPanelScale">
+                        <!-- <img src="iCons/svg_normal/weapon_c4.svg" class="specSidePanel-specialIteam-icon" alt=""> -->
+                    </div>
+                    <div class="specSidePanel-Stats specSidePanel-Stats-Left specSidePanel-Stats-Right rightPanelScale">
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-K specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Kill-Left specSidePanel-Stats-Title-Right specSidePanel-Stats-Title-Kill-Right">K</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-K">8</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-A specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Right">A</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-A">2</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-D specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Right">D</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-D">6</div>
+                    </div>
+                    <div class="specSidePanel-nades-Left specSidePanel-nades specSidePanel-nades-Right rightPanelScale">
+
+                        <img src="iCons/svg_normal/weapon_molotov.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_smokegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_flashbang.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_hegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                    </div>
+                    <div class="specSidePanel-pistal-Left specSidePanel-pistal specSidePanel-pistal-Right">
+                        <img src="iCons/svg_normal/weapon_deagle.svg" class="specSidePanel-pistal-icon" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="specSidePanel-mainWeapon-Left specSidePanel-mainWeapon specSidePanel-mainWeapon-Right">
+                <!-- <img src="iCons/svg_normal/weapon_ak47.svg" class="specSidePanel-mainGun-icon specSidePanel-mainGun-icon-Left specSidePanel-mainGun-icon-Right" alt=""> -->
+            </div>
+                <div class="specSidePanel-extraPanelAnimateFade specSidePanel-extraPanel-overFlow specSidePanel-extraPanel-overFlow-Left specSidePanel-extraPanel-overFlow-Right">
+                        <div class="specSidePanel-extraPanel specSidePanel-extraPanel-Left specSidePanel-extraPanel-Right">
+                            <div class="specSidePanel-extraPanel-Money specSidePanel-extraPanel-Money-Left specSidePanel-extraPanel-Money-Right rightPanelScale">
+                                <div class="specSidePanel-extraPanel-Money-Title">$</div>
+                                <div class="specSidePanel-extraPanel-Money-contents">0</div>
+                            </div>
+                            <div class="specSidePanel-extraPanel-payMoney specSidePanel-extraPanel-payMoney-Left specSidePanel-extraPanel-payMoney-Right rightPanelScale">
+                            <div class="specSidePanel-extraPanel-payMoney-Title">-$</div>
+                            <div class="specSidePanel-extraPanel-payMoney-contents">0</div>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <div id="specSidePanel-7" class="specSidePanel-Left-Single-Full specSidePanel-Single-Full specSidePanel-Right-Single-Full">
+            <div class="specSidePanel-Left-Single specSidePanel-Single specSidePanel-Right-Single">
+                <div class="specSidePanel-Left-healthBar-BgShadow specSidePanel-healthBar-BgShadow specSidePanel-Right-healthBar-BgShadow">
+                    <div class="specSidePanel-Left-healthBar-redWarn specSidePanel-healthBar-redWarn specSidePanel-Right-healthBar-redWarn progress-bar progress-bar-danger"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="">
+                        <div class="specSidePanel-Left-healthBar specSidePanel-healthBar specSidePanel-Right-healthBar" >
+                            <div id="specSidePanel-healthText-R1" class="specSidePanel-Left-healthText specSidePanel-healthText specSidePanel-Right-healthText rightPanelScale">100</div>
+                            <div id="specSidePanel-nameText-R1" class="specSidePanel-nameText specSidePanel-nameText-Left specSidePanel-nameText-Right rightPanelScale">wuXinnnnnnnnnnnn</div>
+                            <div id="specSidePanel-roundKillInfo-R1" class="specSidePanel-Left-roundKillInfo specSidePanel-roundKillInfo specSidePanel-Right-roundKillInfo">
+                                <div class="specSidePanel-Left-roundKillText specSidePanel-roundKillText specSidePanel-Right-roundKillText rightPanelScale">
+                                    5
+                                </div>
+                                <div class="specSidePanel-Left-roundKillIcon specSidePanel-roundKillIcon specSidePanel-Right-roundKillIcon rightPanelScale">
+                                    <img src="iCons/svg_normal/roundKill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-infoBar specSidePanel-infoBar specSidePanel-Right-infoBar" >
+                    <div id="" class="specSidePanel-PlayerNum rightPanelScale">8</div>
+                    <div class="specSidePanel-Armor rightPanelScale"><img src="iCons/svg_normal/item_assaultsuit.svg" class="specSidePanel-Armor-icon" alt=""></div>
+                    <div class="specSidePanel-specialIteam specSidePanel-Left-specialIteam specSidePanel-Right-specialIteam rightPanelScale">
+                        <!-- <img src="iCons/svg_normal/weapon_c4.svg" class="specSidePanel-specialIteam-icon" alt=""> -->
+                    </div>
+                    <div class="specSidePanel-Stats specSidePanel-Stats-Left specSidePanel-Stats-Right rightPanelScale">
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-K specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Kill-Left specSidePanel-Stats-Title-Right specSidePanel-Stats-Title-Kill-Right">K</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-K">8</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-A specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Right">A</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-A">2</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-D specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Right">D</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-D">6</div>
+                    </div>
+                    <div class="specSidePanel-nades-Left specSidePanel-nades specSidePanel-nades-Right rightPanelScale">
+
+                        <img src="iCons/svg_normal/weapon_molotov.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_smokegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_flashbang.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_hegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                    </div>
+                    <div class="specSidePanel-pistal-Left specSidePanel-pistal specSidePanel-pistal-Right">
+                        <img src="iCons/svg_normal/weapon_deagle.svg" class="specSidePanel-pistal-icon" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="specSidePanel-mainWeapon-Left specSidePanel-mainWeapon specSidePanel-mainWeapon-Right">
+                <!-- <img src="iCons/svg_normal/weapon_ak47.svg" class="specSidePanel-mainGun-icon specSidePanel-mainGun-icon-Left specSidePanel-mainGun-icon-Right" alt=""> -->
+            </div>
+                <div class="specSidePanel-extraPanelAnimateFade specSidePanel-extraPanel-overFlow specSidePanel-extraPanel-overFlow-Left specSidePanel-extraPanel-overFlow-Right">
+                        <div class="specSidePanel-extraPanel specSidePanel-extraPanel-Left specSidePanel-extraPanel-Right">
+                            <div class="specSidePanel-extraPanel-Money specSidePanel-extraPanel-Money-Left specSidePanel-extraPanel-Money-Right rightPanelScale">
+                                <div class="specSidePanel-extraPanel-Money-Title">$</div>
+                                <div class="specSidePanel-extraPanel-Money-contents">0</div>
+                            </div>
+                            <div class="specSidePanel-extraPanel-payMoney specSidePanel-extraPanel-payMoney-Left specSidePanel-extraPanel-payMoney-Right rightPanelScale">
+                            <div class="specSidePanel-extraPanel-payMoney-Title">-$</div>
+                            <div class="specSidePanel-extraPanel-payMoney-contents">0</div>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <div id="specSidePanel-8" class="specSidePanel-Left-Single-Full specSidePanel-Single-Full specSidePanel-Right-Single-Full">
+            <div class="specSidePanel-Left-Single specSidePanel-Single specSidePanel-Right-Single">
+                <div class="specSidePanel-Left-healthBar-BgShadow specSidePanel-healthBar-BgShadow specSidePanel-Right-healthBar-BgShadow">
+                    <div class="specSidePanel-Left-healthBar-redWarn specSidePanel-healthBar-redWarn specSidePanel-Right-healthBar-redWarn progress-bar progress-bar-danger"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="">
+                        <div class="specSidePanel-Left-healthBar specSidePanel-healthBar specSidePanel-Right-healthBar" >
+                            <div id="specSidePanel-healthText-R1" class="specSidePanel-Left-healthText specSidePanel-healthText specSidePanel-Right-healthText rightPanelScale">100</div>
+                            <div id="specSidePanel-nameText-R1" class="specSidePanel-nameText specSidePanel-nameText-Left specSidePanel-nameText-Right rightPanelScale">wuXinnnnnnnnnnnn</div>
+                            <div id="specSidePanel-roundKillInfo-R1" class="specSidePanel-Left-roundKillInfo specSidePanel-roundKillInfo specSidePanel-Right-roundKillInfo">
+                                <div class="specSidePanel-Left-roundKillText specSidePanel-roundKillText specSidePanel-Right-roundKillText rightPanelScale">
+                                    5
+                                </div>
+                                <div class="specSidePanel-Left-roundKillIcon specSidePanel-roundKillIcon specSidePanel-Right-roundKillIcon rightPanelScale">
+                                    <img src="iCons/svg_normal/roundKill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-infoBar specSidePanel-infoBar specSidePanel-Right-infoBar" >
+                    <div id="" class="specSidePanel-PlayerNum rightPanelScale">9</div>
+                    <div class="specSidePanel-Armor rightPanelScale"><img src="iCons/svg_normal/item_assaultsuit.svg" class="specSidePanel-Armor-icon" alt=""></div>
+                    <div class="specSidePanel-specialIteam specSidePanel-Left-specialIteam specSidePanel-Right-specialIteam rightPanelScale">
+                        <!-- <img src="iCons/svg_normal/weapon_c4.svg" class="specSidePanel-specialIteam-icon" alt=""> -->
+                    </div>
+                    <div class="specSidePanel-Stats specSidePanel-Stats-Left specSidePanel-Stats-Right rightPanelScale">
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-K specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Kill-Left specSidePanel-Stats-Title-Right specSidePanel-Stats-Title-Kill-Right">K</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-K">8</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-A specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Right">A</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-A">2</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-D specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Right">D</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-D">6</div>
+                    </div>
+                    <div class="specSidePanel-nades-Left specSidePanel-nades specSidePanel-nades-Right rightPanelScale">
+
+                        <img src="iCons/svg_normal/weapon_molotov.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_smokegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_flashbang.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_hegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                    </div>
+                    <div class="specSidePanel-pistal-Left specSidePanel-pistal specSidePanel-pistal-Right">
+                        <img src="iCons/svg_normal/weapon_deagle.svg" class="specSidePanel-pistal-icon" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="specSidePanel-mainWeapon-Left specSidePanel-mainWeapon specSidePanel-mainWeapon-Right">
+                <!-- <img src="iCons/svg_normal/weapon_ak47.svg" class="specSidePanel-mainGun-icon specSidePanel-mainGun-icon-Left specSidePanel-mainGun-icon-Right" alt=""> -->
+            </div>
+                <div class="specSidePanel-extraPanelAnimateFade specSidePanel-extraPanel-overFlow specSidePanel-extraPanel-overFlow-Left specSidePanel-extraPanel-overFlow-Right">
+                        <div class="specSidePanel-extraPanel specSidePanel-extraPanel-Left specSidePanel-extraPanel-Right">
+                            <div class="specSidePanel-extraPanel-Money specSidePanel-extraPanel-Money-Left specSidePanel-extraPanel-Money-Right rightPanelScale">
+                                <div class="specSidePanel-extraPanel-Money-Title">$</div>
+                                <div class="specSidePanel-extraPanel-Money-contents">0</div>
+                            </div>
+                            <div class="specSidePanel-extraPanel-payMoney specSidePanel-extraPanel-payMoney-Left specSidePanel-extraPanel-payMoney-Right rightPanelScale">
+                            <div class="specSidePanel-extraPanel-payMoney-Title">-$</div>
+                            <div class="specSidePanel-extraPanel-payMoney-contents">0</div>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <div id="specSidePanel-9" class="specSidePanel-Left-Single-Full specSidePanel-Single-Full specSidePanel-Right-Single-Full">
+            <div class="specSidePanel-Left-Single specSidePanel-Single specSidePanel-Right-Single">
+                <div class="specSidePanel-Left-healthBar-BgShadow specSidePanel-healthBar-BgShadow specSidePanel-Right-healthBar-BgShadow">
+                    <div class="specSidePanel-Left-healthBar-redWarn specSidePanel-healthBar-redWarn specSidePanel-Right-healthBar-redWarn progress-bar progress-bar-danger"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="">
+                        <div class="specSidePanel-Left-healthBar specSidePanel-healthBar specSidePanel-Right-healthBar" >
+                            <div id="specSidePanel-healthText-R1" class="specSidePanel-Left-healthText specSidePanel-healthText specSidePanel-Right-healthText rightPanelScale">100</div>
+                            <div id="specSidePanel-nameText-R1" class="specSidePanel-nameText specSidePanel-nameText-Left specSidePanel-nameText-Right rightPanelScale">wuXinnnnnnnnnnnn</div>
+                            <div id="specSidePanel-roundKillInfo-R1" class="specSidePanel-Left-roundKillInfo specSidePanel-roundKillInfo specSidePanel-Right-roundKillInfo">
+                                <div class="specSidePanel-Left-roundKillText specSidePanel-roundKillText specSidePanel-Right-roundKillText rightPanelScale">
+                                    5
+                                </div>
+                                <div class="specSidePanel-Left-roundKillIcon specSidePanel-roundKillIcon specSidePanel-Right-roundKillIcon rightPanelScale">
+                                    <img src="iCons/svg_normal/roundKill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-infoBar specSidePanel-infoBar specSidePanel-Right-infoBar" >
+                    <div id="" class="specSidePanel-PlayerNum rightPanelScale">0</div>
+                    <div class="specSidePanel-Armor rightPanelScale"><img src="iCons/svg_normal/item_assaultsuit.svg" class="specSidePanel-Armor-icon" alt=""></div>
+                    <div class="specSidePanel-specialIteam specSidePanel-Left-specialIteam specSidePanel-Right-specialIteam rightPanelScale">
+                        <!-- <img src="iCons/svg_normal/weapon_c4.svg" class="specSidePanel-specialIteam-icon" alt=""> -->
+                    </div>
+                    <div class="specSidePanel-Stats specSidePanel-Stats-Left specSidePanel-Stats-Right rightPanelScale">
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-K specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Kill-Left specSidePanel-Stats-Title-Right specSidePanel-Stats-Title-Kill-Right">K</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-K">8</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-A specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Right">A</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-A">2</div>
+                        <div class="specSidePanel-Stats-Title specSidePanel-Stats-Title-D specSidePanel-Stats-Title-Left specSidePanel-Stats-Title-Right">D</div>
+                        <div class="specSidePanel-Stats-Contents specSidePanel-Stats-Contents-Left specSidePanel-Stats-Contents-Right specSidePanel-Stats-Content-D">6</div>
+                    </div>
+                    <div class="specSidePanel-nades-Left specSidePanel-nades specSidePanel-nades-Right rightPanelScale">
+
+                        <img src="iCons/svg_normal/weapon_molotov.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_smokegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_flashbang.svg" class="specSidePanel-nades-icon" alt="">
+                        <img src="iCons/svg_normal/weapon_hegrenade.svg" class="specSidePanel-nades-icon" alt="">
+                    </div>
+                    <div class="specSidePanel-pistal-Left specSidePanel-pistal specSidePanel-pistal-Right">
+                        <img src="iCons/svg_normal/weapon_deagle.svg" class="specSidePanel-pistal-icon" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="specSidePanel-mainWeapon-Left specSidePanel-mainWeapon specSidePanel-mainWeapon-Right">
+                <!-- <img src="iCons/svg_normal/weapon_ak47.svg" class="specSidePanel-mainGun-icon specSidePanel-mainGun-icon-Left specSidePanel-mainGun-icon-Right" alt=""> -->
+            </div>
+                <div class="specSidePanel-extraPanelAnimateFade specSidePanel-extraPanel-overFlow specSidePanel-extraPanel-overFlow-Left specSidePanel-extraPanel-overFlow-Right">
+                        <div class="specSidePanel-extraPanel specSidePanel-extraPanel-Left specSidePanel-extraPanel-Right">
+                            <div class="specSidePanel-extraPanel-Money specSidePanel-extraPanel-Money-Left specSidePanel-extraPanel-Money-Right rightPanelScale">
+                                <div class="specSidePanel-extraPanel-Money-Title">$</div>
+                                <div class="specSidePanel-extraPanel-Money-contents">0</div>
+                            </div>
+                            <div class="specSidePanel-extraPanel-payMoney specSidePanel-extraPanel-payMoney-Left specSidePanel-extraPanel-payMoney-Right rightPanelScale">
+                            <div class="specSidePanel-extraPanel-payMoney-Title">-$</div>
+                            <div class="specSidePanel-extraPanel-payMoney-contents">0</div>
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <div class="specSidePanel-extraPanelAnimateFade  specSidePanel-Bottom-ExtraPanel-overFlow">
+            <div class="specSidePanel-Left-Bottom-ExtraPanel specSidePanel-Bottom-ExtraPanel specSidePanel-Right-Bottom-ExtraPanel">
+                <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel specSidePanel-Bottom-ExtraPanel-roundLossLevel specSidePanel-Right-Bottom-ExtraPanel-roundLossLevel">
+                    <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-Title specSidePanel-Bottom-ExtraPanel-roundLossLevel-Title specSidePanel-Right-Bottom-ExtraPanel-roundLossLevel-Title rightPanelScale">
+                        连败补偿阶段
+                    </div>
+                    <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-bar specSidePanel-Bottom-ExtraPanel-roundLossLevel-bar specSidePanel-Right-Bottom-ExtraPanel-roundLossLevel-bar" id="specSidePanelRightLossCountBar">
+                        <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Right-Bottom-ExtraPanel-roundLossLevel-block rdlslvl-R"></div>
+                        <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Right-Bottom-ExtraPanel-roundLossLevel-block rdlslvl-R"></div>
+                        <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Right-Bottom-ExtraPanel-roundLossLevel-block rdlslvl-R"></div>
+                        <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Bottom-ExtraPanel-roundLossLevel-block specSidePanel-Right-Bottom-ExtraPanel-roundLossLevel-block rdlslvl-R"></div>
+                    </div>
+                </div>
+                <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossMoney specSidePanel-Bottom-ExtraPanel-roundLossMoney specSidePanel-Right-Bottom-ExtraPanel-roundLossMoney">
+                    <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossMoney-Title specSidePanel-Bottom-ExtraPanel-roundLossMoney-Title rightPanelScale specSidePanel-Right-Bottom-ExtraPanel-roundLossMoney-Title">
+                        战败补偿基础经济
+                    </div>
+                    <div class="specSidePanel-Left-Bottom-ExtraPanel-roundLossMoney-Content specSidePanel-Bottom-ExtraPanel-roundLossMoney-Content rightPanelScale
+                    specSidePanel-Right-Bottom-ExtraPanel-roundLossMoney-Content"  id="rdlsEco-R">
+                        $3500
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="specSideExtraTopPanel-Left specSideExtraTopPanel">
+        <div class="specSideExtraTopPanel-animate">
+            <div class="teamEconomyPanel teamEconomyPanel-Left">
+                <div class="teamEconomyPanel-Content teamEconomyPanel-Content-Left">
+                    <div class="teamEconomyPanel-Content-teamEco-Title">
+                        团队经济    
+                    </div>
+                    <div class="teamEconomyPanel-Content-teamEco-Value">
+                        $80000    
+                    </div> 
+                    <div class="teamEconomyPanel-Content-teamEQEco-Title">
+                        装备总值    
+                    </div>
+                    <div class="teamEconomyPanel-Content-teamEQEco-Value">
+                        $80000    
+                    </div>  
+                </div>     
+            </div>
+            <div class="grenadeCountPanel-Left grenadeCountPanel">
+                <div id="nadesEx-L" class="grenadeCountPanel-Content-Left grenadeCountPanel-Content">
+                    <span class="grenadeCountPanel-Content-smoke">10</span>
+                    <span class="grenadeCountPanel-Content-flash">10</span>
+                    <span class="grenadeCountPanel-Content-hegrenade">10</span>
+                    <span class="grenadeCountPanel-Content-molotove">10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="specSideExtraTopPanel-Right specSideExtraTopPanel">
+        <div class="specSideExtraTopPanel-animate">
+            <div class="eventLogo">
+                <div class="perfectWorldLogo">
+                    <img src="./inGameLogos/perfectWorld.png" alt="">
+                </div><div class="sponsorLogoes">
+                    <img src="./inGameLogos/eventLogo.png" alt="">
+                    <img src="./inGameLogos/qrCodeAlpha.png" alt="">
+                    <img src="./inGameLogos/Nvidia.png" alt="">
+                    <img src="./inGameLogos/iGame.png" alt="">
+                    <img src="./inGameLogos/Zowie.png" alt="">
+                    <img src="./inGameLogos/AutoFull.png" alt="">
+                    <img src="./inGameLogos/hyperX.png" alt="">
+                    <img src="./inGameLogos/ROG.png" alt="">
+                    <img src="./inGameLogos/kotin.png" alt="">
+                </div>    
+            </div>
+            <div class="teamEconomyPanel teamEconomyPanel-Right">
+                <div class="teamEconomyPanel-Content teamEconomyPanel-Content-Right">
+                    
+                        <div class="teamEconomyPanel-Content-teamEco-Title">
+                            团队经济    
+                        </div>
+                        <div class="teamEconomyPanel-Content-teamEco-Value">
+                            $80000    
+                        </div> 
+                        <div class="teamEconomyPanel-Content-teamEQEco-Title">
+                            装备总值    
+                        </div>
+                        <div class="teamEconomyPanel-Content-teamEQEco-Value">
+                            $80000    
+                        </div> 
+                    
+                </div>    
+            </div>
+            <div class="grenadeCountPanel-Right grenadeCountPanel">
+                <div id="nadesEx-R" class="grenadeCountPanel-Content-Right grenadeCountPanel-Content">
+                    <span class="grenadeCountPanel-Content-smoke">10</span>
+                    <span class="grenadeCountPanel-Content-flash">10</span>
+                    <span class="grenadeCountPanel-Content-hegrenade">10</span>
+                    <span class="grenadeCountPanel-Content-molotove">10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>window.$ = window.jQuery = require('./scripts/jquery-3.3.1.min.js')</script>
+<script src="./scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="./scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="./scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="./scripts/specSidePanelExtrabar.js" type="text/javascript"></script>
+<script src="./scripts/jquery.animateNumbers.js" type="text/javascript"></script>
+<script src="./scripts/sponsorLogoLoop.js" type="text/javascript"></script>
+<script src="./scripts/specSidePanelHealthBar.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选手列表</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/buttons.css">
+    <script src="./js/jquery-1.8.3.js" type="text/javascript"></script>   
+    <style type="text/css">
+        .step_div{
+            width: 350px;
+            height: 350px;
+            display: inline-block;
+            background: black;
+            margin: 5px 0px 0px 5px;
+            font-size: 18px;
+            float: left;
+            text-align: center;
+            color: white;
+        }
+        .cbtn{
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .cbtn2{
+            width: 60px;
+        }
+        .num1{
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        textarea{
+            width: 300px;
+            height: 300px;
+            background: black;
+            color: white;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body style="background-color: #ebebee">
+    <div class="step_div step_1">
+        <!-- <div class="num1">选择sendmidi.exe路径</div>
+        <div class="cbtn button button-glow button-rounded button-highlight" id="choosemidi">打开文件</div>
+        <span id='midiurl'></span> -->
+
+        <div class="cbtn button button-glow button-rounded button-action" style="margin-top:100px;" id="showmidi">显示所有midi设备</div>
+        <div class="cbtn button button-glow button-rounded button-caution" style="margin-top: 80px;margin-bottom: 50px;" id="showscreen">显示屏幕列表</div>
+    </div>
+    <div class="step_div step_2">        
+        <p style="margin-top:60px;">当前选择<span id="mididev"></span></p>
+        <div id="midilist_div" style="margin-top:50px;">
+
+        </div>   
+    </div>
+    <div class="step_div step_3">
+        <p style="margin-top:60px;">使用屏幕：<span id="now_show"></span></p>
+        <div id="screen_div" style="margin-top:50px;">
+        </div> 
+    </div>
+    <div class="step_div step_4">
+        <span style="display: inline-block;">运行记录：</span>
+        <textarea id="service_log" style="display: inline-block;" readonly>
+    </textarea>
+    </div>
+    <script type="text/javascript">
+        require('./scripts/choosemidi.js')
+    </script>
+</body>
+</html>

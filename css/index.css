@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.layout{
+    width: 1546px;
+    height: 857px;
+    margin: 135px auto 72px;
+    position: relative;
+    overflow: hidden;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+body{
+    font-family: 微软雅黑;
+}
+/*字体*/
+@font-face {
+    font-family: 'ltthj'/*兰亭特黑简*/;
+    src: url('../font/兰亭特黑简 GBK.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ltxh'/*兰亭细黑*/;
+    src: url('../font/兰亭细黑 GBK_0.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lthj'/*兰亭黑简*/;
+    src: url('../font/兰亭黑简.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fz'/*方正正中黑简体*/;
+    src: url('../font/方正正中黑简体_0.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+/*字体*/
+/*MVP start*/
+.box{
+    width: 100%;
+    height: 1080px;
+    overflow: hidden;
+}
+.MVP_con{
+    position: relative;
+}
+.MVP_player{
+    float: left;
+    width: 791px;
+    height: 100%;
+    text-align: right;
+    margin-bottom:0;
+}
+.MVP_player img{
+    margin-top: 111px;
+}
+.MVP_parts{
+    width: 755px;
+    height: 100%;
+    float: left;
+}
+.MVP_name{
+    position: absolute;
+    width: 470px;
+    height: 135px;
+    bottom: 57px;
+    left: -16px;
+    background: url("../img/MVP_bg2.png") no-repeat center;
+}
+.name1{
+    width: 100%;
+    height: 95px;
+    line-height: 102px;
+    text-align: center;
+    /*margin-left: 114px;*/
+    margin-top: 11px;
+    font-family: fz,"Microsoft YaHei";
+    font-size: 57px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 2px -2px 4px #333;
+    overflow: hidden;
+}
+.name2{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    /*margin-left: 114px;*/
+    font-family: ltxh,"Microsoft YaHei";
+    font-size: 24px;
+    font-style: italic;
+    color: #a0a0a0;
+}
+.MVP_parts li{
+    width: 613px;
+    height: 109px;
+    background: url("../img/MVP_bg1.png") no-repeat center;
+    margin-left: 57px;
+}
+.MVP_parts li:first-child{
+    margin-top: 241px;
+}
+.MVP_parts li span{
+    display: block;
+    float: left;
+    height: 83px;
+    line-height: 90px;
+    text-align: center;
+    margin-top: 8px;
+    font-family: ltthj,"Microsoft YaHei";
+    font-size: 37px;
+    font-style: italic;
+    color: #FFF;
+}
+.parts1{
+    width: 423px;
+    text-shadow: 2px -2px 4px #333;
+}
+.parts2{
+    width: 167px;
+    text-shadow: 2px -2px 4px #333;
+}
+/*MVP over*/
+
+/*Player start*/
+.Player_name1{
+    position: absolute;
+    width: 470px;
+    height: 135px;
+    bottom: 57px;
+    left: -16px;
+    background: url("../img/Player_data_bg2.png") no-repeat center;
+}
+.Player_name2{
+    position: absolute;
+    width: 470px;
+    height: 135px;
+    bottom: 57px;
+    right: -16px;
+    background: url("../img/Player_data_bg4.png") no-repeat center;
+}
+.Player_pic{
+    width: 100%;
+    height: 655px;
+    margin-top: 208px;
+}
+.Player_pic img{
+    width: 512px;
+}
+.Player_left{
+    width: 865px;
+    text-align: left;
+    float: left;
+}
+.Player_right{
+    width: 680px;
+    text-align: right;
+    float: left;
+}
+.contrast{
+    width: 691px;
+    position: absolute;
+    left: 50%;
+    margin-left: -345px;
+    top: 50%;
+    margin-top: -196px;
+}
+.contrast li{
+    width: 100%;
+    height: 98px;
+    background: url("../img/Player_data_bg1.png") no-repeat center;
+}
+.contrast li span{
+    display: block;
+    float: left;
+    height: 73px;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 8px;
+    font-family: ltthj,"Microsoft YaHei";
+    font-size: 32.72px;
+    font-style: italic;
+    color: #FFF;
+}
+.parts3{
+    width: 357px;
+}
+/*Player over*/
+
+/*After start*/
+.table{
+    width: 1376px;
+    height: 376px;
+    background: url("../img/After_game_bg2.png") no-repeat center;
+    margin: 0 auto 0;
+    overflow: hidden;
+}
+.table li{
+    height: 49px;
+    margin-top: 5px;
+    margin-bottom: 13px;
+}
+.table li span{
+    display: block;
+    float: left;
+    width: 236px;
+    height: 49px;
+    line-height: 54px;
+    text-align: center;
+    font-family: fz,"Microsoft YaHei";
+    font-size: 23.86px;
+    font-style: italic;
+    color: #FFF;
+    overflow: hidden;
+}
+.span2{
+    font-size: 20.33px!important;
+    font-family: ltthj,"Microsoft YaHei"!important;
+    text-shadow: 2px -2px 4px #333;
+}
+.span1{
+    width: 138px!important;
+    font-size: 17px!important;
+    text-align: left!important;
+    padding-left: 28px;
+    margin-right: 15px;
+    font-weight: bold;
+    text-shadow: 2px -2px 4px #333;
+}
+.img{
+    margin-left: 285px;
+    margin-top: 124px;
+}
+.img li{
+    float: left;
+    margin-right: 14px;
+}
+/*After over*/
+
+/*Team start*/
+.Team_top{
+    width: 1051px;
+    height: 335px;
+    margin: 90px auto 0;
+}
+.Team_bot{
+    width: 1051px;
+    height: 420px;
+    margin: 0 auto;
+}
+.Team_top>div{
+    float: left;
+}
+.Team_logo{
+    width: 296px;
+    height: 335px;
+    text-align: center;
+    line-height: 335px;
+}
+.Team_logo img{
+    vertical-align: middle;
+}
+.Team_mid{
+    width: 458px;
+    height: 335px;
+}
+.vs{
+    width: 458px;
+    text-align: center;
+    margin: 76px auto 25px;
+}
+.score{
+    width: 458px;
+    height: 101px;
+    background: url("../img/Team_data_bg2.png") no-repeat center;
+}
+.score span{
+    display: block;
+    width: 100%;
+    height: 101px;
+}
+.Team_bot ul li{
+    height: 101px;
+    background: url("../img/Team_data_bg3.png") no-repeat center;
+}
+.Team_bot ul li span{
+    display: block;
+    float: left;
+}
+.parts4,.parts6{
+    width: 210px;
+    height: 101px;
+    line-height: 101px;
+    font-family: fz, "Microsoft YaHei";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 37px;
+    color: #FFF;
+    text-shadow: 2px -2px 4px #333;
+}
+.parts4{
+    text-align: left;
+    padding-left: 98px;
+}
+.parts6{
+    text-align: right;
+    padding-right: 98px;
+}
+.parts5{
+    width: 425px;
+    height: 101px;
+    line-height: 101px;
+    font-family: fz, "Microsoft YaHei";
+    font-style: italic;
+    font-size: 37px;
+    color: #FFF;
+    text-align: center;
+}
+/*Team over*/
