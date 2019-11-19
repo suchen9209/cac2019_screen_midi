@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.layout{
+    width: 1236px;
+    margin: 0 auto;
+}
+ol,ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+body{
+    font-size: 14px;
+    font-family: 微软雅黑!important;
+}
+
+@media screen and (max-width: 1080px){
+    body {
+        width: 1236px;
+        margin: 0 auto;
+    }
+}
+
+
+/*字体*/
+.f1{
+    font-size: 12px;
+}
+.f2{
+    font-size: 14px;
+}
+.f3{
+    font-size: 16px;
+}
+.f4{
+    font-size: 18px;
+}
+.f5{
+    font-size: 20px;
+}
+.f6{
+    font-size: 22px;
+}
+.f7{
+    font-size: 24px;
+}
+.f8{
+    font-size: 26px;
+}
+@font-face {
+    font-family: 'FLT';
+    src: url('../fonts/Futura LT Extra Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FLE';
+    src: url('../fonts/Futura LT Extra Bold Oblique.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'zq';
+    src: url('../fonts/zh.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: "zq";
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.pointer{
+    cursor:pointer;
+}
+.clear{
+    clear: both;
+}
+.part{
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+}
+/*高度*/
+.h37{
+    height: 37px;
+}
+.h62{
+    height: 62px;
+}
+.h85{
+    height: 85px;
+}
+.h88{
+    height: 88px;
+}
+.h139{
+    height: 139px;
+}
+.h165{
+    height: 165px;
+}
+.h167{
+    height: 167px;
+}
+.h481{
+    height: 481px;
+}
+.h500{
+    height: 500px;
+}
+.h704{
+    height: 704px;
+}
+.h750{
+    height: 750px;
+}
+
+
+
+
+
+
+
+/*不可点击*/
+.disabled a{
+    cursor: not-allowed;
+}
+

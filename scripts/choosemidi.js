@@ -6,6 +6,8 @@ const ipc = require('electron').ipcRenderer;
 // const midiBtn = $("#choosemidi")
 const showMidiBtn = $("#showmidi")
 const screenMidiBtn = $("#showscreen")
+const reloadMidiBtn = $("#reload")
+
 
 const midiurl = path.resolve(__dirname, '../midi') + '\\sendmidi.exe';
 
@@ -16,6 +18,11 @@ const midiurl = path.resolve(__dirname, '../midi') + '\\sendmidi.exe';
 //         }
 //     })
 // })
+
+reloadMidiBtn.on('click',()=>{
+    ipc.send('reload');
+})
+
 screenMidiBtn.on('click',()=>{
     var displays = screen.getAllDisplays()
     $("#screen_div").html('');
@@ -58,29 +65,35 @@ showMidiBtn.on('click',()=>{
 ipc.on('sendmidi',(event,data)=>{
     console.log(data)
     let midi_dev= $('#mididev').html();
-    if(data == 'exploded'){
-        var cmd_str = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 on 16 16';
+    if(data == 'planted'){
+        var cmd_str = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 on 1 127';
         cmd.run(cmd_str)
-        var cmd_str2 = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 off 16 16';
-        cmd.run(cmd_str2)
+        // var cmd_str2 = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 off 1 1';
+        // cmd.run(cmd_str2)
+    }
+    if(data == 'exploded'){
+        var cmd_str = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 on 2 127';
+        cmd.run(cmd_str)
+        // var cmd_str2 = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 off 2 127';
+        // cmd.run(cmd_str2)
     }
     if(data == 'defused'){
-        var cmd_str = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 on 17 17';
+        var cmd_str = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 on 3 127';
         cmd.run(cmd_str)
-        var cmd_str2 = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 off 17 17';
-        cmd.run(cmd_str2)
-    }
-    if(data == 'planted'){
-        var cmd_str = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 on 17 17';
-        cmd.run(cmd_str)
-        var cmd_str2 = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 off 17 17';
-        cmd.run(cmd_str2)
-    }
+        // var cmd_str2 = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 off 3 3';
+        // cmd.run(cmd_str2)
+    }    
     if(data == 'multikill'){
-        var cmd_str = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 on 17 17';
+        var cmd_str = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 on 4 127';
         cmd.run(cmd_str)
-        var cmd_str2 = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 off 17 17';
-        cmd.run(cmd_str2)
+        // var cmd_str2 = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 off 4 4';
+        // cmd.run(cmd_str2)
+    }
+    if(data == 'endgame'){
+        var cmd_str = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 on 1 0';
+        cmd.run(cmd_str)
+        // var cmd_str2 = "\"" + midiurl+"\"" + ' dev "'+ midi_dev +'" ch 1 off 5 5';
+        // cmd.run(cmd_str2)
     }
     let myDate = new Date();
     let log =  myDate.toLocaleString() +' ' +data + '\n' + $('#service_log').val();

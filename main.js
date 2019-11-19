@@ -16,21 +16,24 @@ function createWindow(bounds){
     x: bounds.x,
     y: bounds.y,
     frame: false,  
-    transparent: true,
     webPreferences: {
       nodeIntegration: true,
+      zoomFactor:0.5
       // experimentalFeatures: true
     }
   })
-
+  // const indexPath = path.join('file://',__dirname,'/index.html')
+  // mainWindow.loadURL(indexPath)
   mainWindow.loadFile('index.html')
-  mainWindow.setIgnoreMouseEvents(true)
+  // mainWindow.setIgnoreMouseEvents(true)
   mainWindow.setAlwaysOnTop(true)
   mainWindow.setFullScreen(true)
-  //mainWindow.webContents.openDevTools({mode:'detach'})
+  mainWindow.webContents.openDevTools({mode:'detach'})
   mainWindow.on('closed', function () {
     mainWindow = null
   })
+
+  //console.log(mainWindow.webContents.getZoomLevel());
 }
 
 app.on('ready', ()=>{
@@ -40,6 +43,13 @@ app.on('ready', ()=>{
   controlWindow.webContents.openDevTools()
   controlWindow.loadURL(modalPath2)
   controlWindow.show()  
+  controlWindow.on('closed',function(){
+    controlWindow = null
+    if(mainWindow!= null){
+      mainWindow.close()
+    }
+  })
+  
 })
 
 ipcMain.on('show_screen',(event,arg)=>{
@@ -52,6 +62,9 @@ ipcMain.on('show_screen',(event,arg)=>{
 
 ipcMain.on('sendmidi',(event,arg)=>{
   controlWindow.webContents.send('sendmidi',arg)
+})
+ipcMain.on('reload',(event,arg)=>{
+  mainWindow.webContents.send('uiRefresh',arg)
 })
 // app.on('ready', function () {
 //   globalShortcut.register('M',function(){

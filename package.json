@@ -1,21 +1,20 @@
 {
-  "name": "iCAOS",
-  "productName": "iCAOS",
-  "description": "imba-CounterStrike-Arguement-Observer-System",
+  "name": "CAC2019",
+  "productName": "CAC2019",
+  "description": "imba-CAC-Screen-Midi",
   "keywords": [],
   "main": "./main.js",
-  "version": "0.9.3",
+  "version": "1.0.0",
   "author": "wuXin",
   "scripts": {
     "start": "electron .",
-    "pack": "electron-packager . iCAOS --win --out ./iCAOS --arch=x64 --unpack * --app-version=0.8.2 --overwrite --icon=wuXin.ico"
+    "pack": "electron-packager . iCAOS --win --out ./iCAOS --arch=x64 --unpack * --app-version=1.0.0 --overwrite"
   },
   "dependencies": {
     "dota2-gsi": "^1.0.2",
     "express": "^4.16.4",
     "jquery": "^3.4.1",
     "jsdom": "^15.1.0",
-    "video.js": "7.6.5",
     "node-cmd": "3.0.0"
   },
   "devDependencies": {
